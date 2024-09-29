@@ -4,7 +4,6 @@ import { setToken, setUser } from "@/redux/features/auth/auth.slice";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import Cookies from "js-cookie";
 import { LogIn } from "lucide-react";
-import { FaArrowLeftLong } from "react-icons/fa6";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "sonner";
