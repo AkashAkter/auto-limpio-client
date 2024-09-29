@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { api } from "@/redux/api/api";
 import { IBooking, IUserBooking } from "@/types/booking";
 interface IQueryOptions {
