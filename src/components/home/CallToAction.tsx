@@ -25,7 +25,7 @@ const CallToAction = () => {
             </div>
             <div className="flex items-center gap-3">
               <Link to="/services">
-                <button className="px-4 py-3 md:px-6 md:py-4 text-white bg-primary rounded-lg btn-custom font-bold md:text-lg xl:text-xl">
+                <button className="px-4 py-3 md:px-6 md:py-4 text-white bg-primaryMat rounded-lg font-bold md:text-lg xl:text-xl hover:bg-black">
                   ALL SERVICES
                 </button>
               </Link>
