@@ -14,7 +14,7 @@ const FeaturedServices = () => {
   );
 
   return (
-    <div className="w-full bg-black py-[70px] px-[20px]">
+    <div className="w-full bg-black py-14 px-20">
       {/* Heading */}
       <h2 className="text-4xl font-bold text-white text-center mb-10">
         Premium Car Wash Services
