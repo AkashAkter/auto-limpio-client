@@ -19,7 +19,7 @@ const HeroSection = () => {
     "En Auto Limpio vamos más allá de nuestro deber para brindar uncuidado automotriz excepcional. Utilizando métodos de vanguardia.";
 
   return (
-    <div className="relative w-full h-[500px] overflow-hidden">
+    <div className="relative w-full h-[550px] overflow-hidden mb-20">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}

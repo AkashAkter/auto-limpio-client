@@ -78,27 +78,31 @@ const ServiceView = () => {
   return (
     <div className="layout_container bg-black mx-auto px-4 py-8 sm:px-6 md:py-12 min-h-[100vh]">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-[250px_1fr]">
-        <div className="space-y-6 bg-gray-950 border-2 p-10 rounded-md">
-          <div className="text-black">
-            <h3 className="mb-2 text-lg font-medium text-white">Search</h3>
+        <div className="space-y-6 bg-black border-2 border-gray-800 p-10 rounded-lg shadow-md">
+          <div className="text-white">
+            <h3 className="mb-2 text-lg font-semibold">Explore</h3>
             <Input
               type="text"
-              placeholder="Search products..."
+              placeholder="Search destinations..."
               onChange={handleSearchChange}
+              className="bg-gray-900 text-white"
             />
           </div>
 
           <div>
-            <h3 className="mb-2 text-lg font-medium text-white">Price Range</h3>
+            <h3 className="mb-2 text-lg font-semibold text-white">
+              Budget Range
+            </h3>
             <div />
-            <div className="w-full flex-col gap-[10px]">
-              <div className="mt-2 center gap-[5px] text-black">
+            <div className="w-full flex-col gap-2">
+              <div className="mt-2 flex items-center gap-2">
                 <Input
                   placeholder="Min"
                   type="number"
                   min={0}
                   value={priceInputState[0] || ""}
                   onChange={(e) => handleChangePriceState(e.target.value, 0)}
+                  className="bg-gray-900 text-white"
                 />
                 <Input
                   placeholder="Max"
@@ -106,25 +110,27 @@ const ServiceView = () => {
                   min={0}
                   type="number"
                   onChange={(e) => handleChangePriceState(e.target.value, 1)}
+                  className="bg-gray-900 text-white"
                 />
               </div>
               <Button
-                className="w-full text-black font-bold bg-primaryMat border-2 border-black hover:bg-black hover:border-2 hover:border-primaryMat hover:text-primaryMat mt-[10px]"
+                className="w-full text-white font-bold bg-blue-600 border-2 border-blue-700 hover:bg-blue-700 hover:border-blue-600 hover:text-white mt-2 rounded-md"
                 onClick={() => setPriceRange(priceInputState)}
               >
-                Add
+                Apply
               </Button>
             </div>
           </div>
 
           <Button
             variant="outline"
-            className="text-black"
+            className="bg-stone-950 text-white border-2 border-gray-600 hover:bg-gray-700"
             onClick={handleClearFilters}
           >
-            Clear Filters
+            Reset Filters
           </Button>
         </div>
+
         <div>
           <div className="mb-6 flex items-center justify-between gap-[20px]">
             <h1 className="text-2xl font-bold">Services</h1>
