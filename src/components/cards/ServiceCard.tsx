@@ -10,9 +10,11 @@ const ServiceCard = ({ service }: { service: IService }) => {
         background:
           "linear-gradient(to bottom right, rgba(30, 30, 30, 0.8), rgba(0, 0, 0, 0.7))", // Dark gradient for black theme
       }}
-      className="w-full max-w-sm p-6 grid gap-4 transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-blue-500" // Adjust shadow color here
+      className="w-full max-w-sm p-6 grid gap-4 transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-blue-500"
     >
-      <div className="flex items-start gap-4">
+      <div className="flex items-center gap-4">
+        {" "}
+        {/* Changed items-start to items-center */}
         <div className="bg-primary rounded-md p-3 flex items-center justify-center">
           <WashingMachineIcon className="w-6 h-6 text-primary-foreground" />
         </div>

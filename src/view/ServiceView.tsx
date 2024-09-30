@@ -114,7 +114,7 @@ const ServiceView = () => {
                 />
               </div>
               <Button
-                className="w-full text-white font-bold bg-blue-600 border-2 border-blue-700 hover:bg-blue-700 hover:border-blue-600 hover:text-white mt-2 rounded-md"
+                className="w-full text-white font-bold bg-primaryMat border-2 hover:bg-black hover:border-primaryMat hover:text-white mt-2 rounded-md"
                 onClick={() => setPriceRange(priceInputState)}
               >
                 Apply
@@ -133,7 +133,7 @@ const ServiceView = () => {
 
         <div>
           <div className="mb-6 flex items-center justify-between gap-[20px]">
-            <h1 className="text-2xl font-bold">Services</h1>
+            <h1 className="text-2xl font-bold text-white">Services</h1>
             <div className="flex items-center gap-4">
               <Select onValueChange={(e) => setSort(e)} value={sort}>
                 <SelectTrigger>
