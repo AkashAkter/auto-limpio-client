@@ -16,7 +16,7 @@ const reviewAPi = api.injectEndpoints({
       { limit?: number; page?: number }
     >({
       query: ({ limit, page }) => ({
-        url: `/review/get?limit=${limit || 2}page=${page || 1}`,
+        url: `/review/get?limit=${limit || 2}&page=${page || 1}`, // Added '&' here
         method: "GET",
       }),
       providesTags: ["review"],

@@ -68,7 +68,7 @@ const Review = ({
     addSuffix: true,
   });
   return (
-    <div className="py-4 border-b border-gray-600">
+    <div className="py-4 border-b border-gray-600 flex-1 m-10">
       <div className="flex items-center gap-4 mb-2">
         <Avatar className="w-12 h-12">
           <AvatarImage
@@ -154,15 +154,18 @@ export default function ReviewComponent() {
             </div>
           </div>
 
-          {data?.data?.slice(0, 2)?.map((review, i) => (
-            <Review
-              key={i}
-              name={`${review.user?.firstName} ${review.user?.lastName}`}
-              rating={review.rating}
-              date={review.createdAt}
-              comment={review.comment}
-            />
-          ))}
+          <div className="flex gap-4">
+            {data?.data?.slice(0, 2)?.map((review, i) => (
+              <Review
+                key={i}
+                name={`${review.user?.firstName} ${review.user?.lastName}`}
+                rating={review.rating}
+                date={review.createdAt}
+                comment={review.comment}
+              />
+            ))}
+          </div>
+
           <Link
             to={"/testimonials"}
             className="mt-4 mx-auto text-white text-center hover:underline flex items-center justify-center gap-1"

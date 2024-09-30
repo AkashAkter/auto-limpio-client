@@ -91,10 +91,6 @@
 
   animation: moveBackground 100s linear infinite;
 }
-.testimonial_bg {
-  background: linear-gradient(#36363696, #170909cf), url("/images/bg.jpg");
-  animation: moveBackground 90s linear infinite;
-}
 
 @keyframes moveBackground {
   0% {
