@@ -5,6 +5,7 @@ import { getTimeRemaining } from "@/utils/getRemainingSlots";
 import { format } from "date-fns";
 import { ClockIcon } from "lucide-react";
 import { useEffect, useState } from "react";
+
 const UserBookingCard = ({ data }: { data: IUserBooking }) => {
   const [countdown, setCountdown] = useState<TBookingCountDown | null>(null);
 
@@ -19,19 +20,25 @@ const UserBookingCard = ({ data }: { data: IUserBooking }) => {
 
     return () => clearInterval(intervalId);
   }, [data]);
+
   return (
-    <Card>
+    <Card
+      style={{
+        background:
+          "linear-gradient(to bottom right, rgba(30, 30, 30, 0.8), rgba(0, 0, 0, 0.7))",
+      }}
+    >
       <CardContent className="flex flex-col gap-4 p-5">
         <h3 className="text-lg break-words font-[700]">
           {data?.service?.name}
         </h3>
 
-        <div className="text-sm text-muted-foreground flex-col flex gap-[5px]">
+        <div className="text-sm text-slate-300 flex-col flex gap-[5px]">
           <p>
             Date:{" "}
             {format(new Date(data?.slot?.date || "11-11-2020"), "MMM dd yyyy")}
           </p>
-          <p>Time:{data.slot?.startTime}</p>
+          <p>Time: {data.slot?.startTime}</p>
           <div className="flex items-center gap-2 text-muted-foreground shrink-0">
             <ClockIcon className="w-4 h-4" />
             <span>
