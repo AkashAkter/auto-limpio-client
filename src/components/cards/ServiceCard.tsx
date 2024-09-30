@@ -10,7 +10,7 @@ const ServiceCard = ({ service }: { service: IService }) => {
         background:
           "linear-gradient(to bottom right, rgba(30, 30, 30, 0.8), rgba(0, 0, 0, 0.7))", // Dark gradient for black theme
       }}
-      className="w-full max-w-sm p-6 grid gap-4 transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-blue-500"
+      className="w-full max-w-sm p-6 grid gap-4 transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-primaryMat"
     >
       <div className="flex items-center gap-4">
         {" "}
