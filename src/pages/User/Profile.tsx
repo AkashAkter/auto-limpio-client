@@ -29,7 +29,7 @@ const Profile = () => {
           "linear-gradient(to bottom right, rgba(30, 30, 30, 0.8), rgba(0, 0, 0, 0.7))",
       }}
     >
-      <div className="col-span-1 md:col-span-2 border-r md:border-r-0 border-primaryMat p-6 md:p-10 flex flex-col justify-center space-y-4">
+      <div className="col-span-1 md:col-span-2 border-r md:border-r-0 border-primaryMat p-6 md:p-10 flex flex-col justify-center space-y-4 pl-4">
         <h3 className="text-lg font-semibold py-2 border-b border-primaryMat">
           {user?.firstName} {user?.lastName}
         </h3>
@@ -86,7 +86,7 @@ const Profile = () => {
         </div>
       </div>
 
-      <div className="border-l md:border-l-0 border-primaryMat p-6 md:p-10 flex justify-center items-center">
+      <div className="border-l md:border-l-0 border-primaryMat p-6 md:p-10 flex justify-center items-center ">
         <Link to={"/dashboard/user/update-info"} className="relative group">
           <img
             src={
@@ -95,7 +95,7 @@ const Profile = () => {
             width={200}
             height={200}
             alt="avatar"
-            className="rounded-full border-4 border-primaryMat shadow-md"
+            className="rounded-full border-4 border-primaryMat transition-transform duration-300 ease-in-out transform hover:scale-105  shadow-2xl shadow-primaryMat"
           />
         </Link>
       </div>
