@@ -8,9 +8,9 @@ const ServiceCard = ({ service }: { service: IService }) => {
     <Card
       style={{
         background:
-          "linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(200, 200, 200, 0.5))", // Adjust colors and transparency as needed
+          "linear-gradient(to bottom right, rgba(30, 30, 30, 0.8), rgba(0, 0, 0, 0.7))", // Dark gradient for black theme
       }}
-      className="w-full max-w-sm p-6 grid gap-4"
+      className="w-full max-w-sm p-6 grid gap-4 transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-blue-500" // Adjust shadow color here
     >
       <div className="flex items-start gap-4">
         <div className="bg-primary rounded-md p-3 flex items-center justify-center">
